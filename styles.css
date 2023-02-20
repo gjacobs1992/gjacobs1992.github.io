@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+    background-color: white;
+    font-family: 'Oswald','Roboto', sans-serif;
+    font-weight: 500;
+    color: rgb(82, 80, 80);
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    background-color: rgb(219, 223, 231);
+    color: white;
+    width: 100%;
+    display: flex;
+    border-bottom: .05em solid grey;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px .35em .15em rgba(0, 0, 0, 0.2);
+    background: hsl(0 0% 0% / 0.75);
+}
+@supports(backdrop-filter: blur(1rem)){
+    header{
+        background: hsla(0, 0%, 0%, 0.1);
+        backdrop-filter: blur(1rem);
+        color: black;
+    }
+    .menu-bar li a{
+        color: black;
+    }
+}
+nav{
+    display: flex;
+}
+.menu-bar {
+    list-style: none;
+    display: flex;
+    gap: 8rem;
+    padding: 0;
+    margin: 0;
+}
+.menu-bar li {
+    padding-right: 50px;
+}
+.name{
+    margin: 2rem;
+}
+.menu-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
+.menu-bar li a:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+main{
+    padding-top: 120px;
+}
+.card-container,.project-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.job-container,.project{
+    background-color: rgb(230, 233, 241);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    max-width: 800px;
+    min-width: 800px;
+    padding: 20px;
+}
+.name{
+    font-weight: 100;
+}
+.location-time-container{
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+.company{
+    font-weight: 300;
+}
+.location, .timeframe{
+    font-weight: 100;
+}
+.company{
+    display: inline;
+}
+.logo{
+    max-width: 60px;
+}
+.job-container > ul{
+    text-align: left;
+}
+.job-container > ul > li{
+    font-style: italic;
+}
+.job-overview{
+    font-weight: bold;
+}
+.project:hover{
+    cursor: pointer;
+    filter: blur(.15rem);
+}
+.project-card-link{
+    text-decoration: none;
+    color:rgb(82, 80, 80);
+}
