@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>JJ Jacobs</title>
+    <script src="nav.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1 class="name">JJ Jacobs</h1>
+    <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
+    <header data-visible="false">
       <nav>
-        <ul class="menu-bar">
+        <h1 class="name">JJ Jacobs</h1>
+        <ul class="primary-navigation"  id="primary-navigation">
           <li><a href="index.html">Experience</a></li>
           <li><a href="pages/education.html">Education</a></li>
           <li><a href="pages/projects.html">Projects</a></li>
@@ -19,6 +27,9 @@
       </nav>
     </header>
     <main>
+      <div class="page-title-div">
+        <h1 class="page-title">Experience</h1>
+      </div>
       <div class="card-container">
         <div class="job-container">
           <h1 class="job-title">DEVELOPER</h1>
@@ -27,6 +38,25 @@
             <h3 class="location">Anywhere</h3>
             <h3 class="timeframe">ASAP</h3>
           </div>
+        </div>
+        <div class="job-container">
+          <h1 class="job-title">Full Stack Bootcamp Student</h1>
+          <h2 class="company">Tech Elevator</h2>
+          <img class="logo" src="imgs/techelevator.png" />
+          <div class="location-time-container">
+            <h3 class="location">Columbus, OH/Remote</h3>
+            <h3 class="timeframe">August 2022 - Present</h3>
+          </div>
+          <p class="job-overview">
+            30-week full-stack coding bootcamp on how to create dynamic
+            web-based software systems providing 700+ hours of development
+            education and application
+          </p>
+          <ul class="resume-bullets" id="teList">
+            <li>Module 1: Intro to Programming in Java</li>
+            <li>Module 2: Client-Server Programming in Java</li>
+            <li>Module 3: Web Application Development</li>
+          </ul>
         </div>
         <div class="job-container">
           <h1 class="job-title">Systems Administrator</h1>

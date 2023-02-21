@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
     <title>JJ Jacobs</title>
+    <script src="../nav.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1 class="name">JJ Jacobs</h1>
+    <button
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
+    <header data-visible="false">
       <nav>
-        <ul class="menu-bar">
+        <h1 class="name">JJ Jacobs</h1>
+        <ul class="primary-navigation"  id="primary-navigation">
           <li><a href="../index.html">Experience</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -19,6 +27,9 @@
       </nav>
     </header>
     <main>
+      <div class="page-title-div">
+        <h1 class="page-title">Education</h1>
+      </div>
       <div class="card-container">
         <div class="job-container">
           <h1 class="job-title">Tech Elevator</h1>
