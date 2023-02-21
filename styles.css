@@ -51,6 +51,7 @@ nav {
 }
 .name {
   margin: 2rem;
+  font-size: 30px;
 }
 .primary-navigation li a {
   text-decoration: none;
@@ -105,9 +106,6 @@ main {
 .location,
 .timeframe {
   font-weight: 100;
-}
-.company {
-  display: inline;
 }
 .logo {
   max-width: 60px;
