@@ -161,6 +161,9 @@ main {
 .list-title{
   font-weight: bold;
 }
+#home-page-title{
+  display: none;
+}
 @media only screen and (max-width: 800px) {
   .job-container,
   .project {
@@ -254,5 +257,8 @@ main {
   }
   .project:hover {
     cursor: pointer;
+  }
+  #home-page-title{
+    display: block;
   }
 }
