@@ -11,7 +11,7 @@ body {
 }
 header {
   position: fixed;
-  background-color: rgb(219, 223, 231);
+  background-color: rgb(230, 233, 241);
   color: white;
   width: 100%;
   display: flex;
@@ -24,7 +24,7 @@ header {
 }
 @supports (backdrop-filter: blur(1rem)) {
   header {
-    background: hsla(0, 0%, 0%, 0.1);
+    background: rgb(230, 233, 241);
     backdrop-filter: blur(1rem);
     color: black;
   }
@@ -53,12 +53,12 @@ nav {
   margin: 2rem;
   font-size: 30px;
 }
-.primary-navigation li a {
+.primary-navigation li a, nav a{
   text-decoration: none;
   color: black;
   font-size: 1.25em;
 }
-.primary-navigation li a:hover {
+.primary-navigation li a:hover, nav a:hover {
   cursor: pointer;
   font-weight: bold;
 }
@@ -121,7 +121,6 @@ main {
 }
 .project:hover {
   cursor: pointer;
-  filter: blur(0.15rem);
 }
 .project-card-link {
   text-decoration: none;
@@ -129,6 +128,38 @@ main {
 }
 .sr-only{
     display: none;
+}
+.home-card-container{
+  display: flex;
+  justify-content: center;
+}
+#headshot{
+  width: 35rem;
+  border-radius: 100%;
+}
+#home-card{
+  background-color: rgb(230, 233, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  max-width: 800px;
+  min-width: 800px;
+  padding: 20px;
+}
+#home-lists{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+#greeting{
+  font-size: 2rem;
+}
+.list-title{
+  font-weight: bold;
 }
 @media only screen and (max-width: 800px) {
   .job-container,
@@ -193,19 +224,35 @@ main {
     margin: 0;
     padding: 0;
   }
-  .card-container, .project-card-container{
+  .card-container, .project-card-container, .home-card-container{
     padding-top: 100px;
+  }
+  .home-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #home-card{
+    padding-top: 10;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 80%;
+    min-width: 80%;
+  }
+  #headshot{
+    max-width: 20rem;
   }
   .page-title-div{
     position: fixed;
     top: 0;
     border-bottom: 1px solid grey;
     width: 100%;
-    background: hsl(0 0% 0% / 0.05);
-    backdrop-filter: blur(1rem);
+    background-color: rgb(230, 233, 241);
+  }
+  .page-title{
+    text-align: center;
   }
   .project:hover {
     cursor: pointer;
-    filter: blur(0);
   }
 }

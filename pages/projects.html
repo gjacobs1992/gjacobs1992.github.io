@@ -10,17 +10,19 @@
   </head>
   <body>
     <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Menu</span>
-      </button>
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
     <header data-visible="false">
       <nav>
-        <h1 class="name">JJ Jacobs</h1>
-        <ul class="primary-navigation"  id="primary-navigation">
-          <li><a href="../index.html">Experience</a></li>
+        <a href="../index.html">
+          <h1 class="name">JJ Jacobs</h1>
+        </a>
+        <ul class="primary-navigation" id="primary-navigation">
+          <li><a href="experience.html">Experience</a></li>
           <li><a href="education.html">Education</a></li>
           <li><a href="projects.html">Projects</a></li>
         </ul>
@@ -31,6 +33,21 @@
         <h1 class="page-title">Projects</h1>
       </div>
       <div class="project-card-container">
+        <a
+          href="https://github.com/gjacobs1992/ticTacToe"
+          class="project-card-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="project">
+            <h1>Tic-Tac-Toe</h1>
+            <img class="logo" src="../imgs/ticTacToe.svg" />
+            <p>A game of tic-tac-toe with score keeping and win detection</p>
+            <p>March 2023</p>
+            <h3>Languages used:</h3>
+            <p>HTML, CSS, JavaScript</p>
+          </div>
+        </a>
         <a
           href="https://github.com/gjacobs1992/gjacobs1992.github.io"
           class="project-card-link"
@@ -81,24 +98,6 @@
             <p>December 2022</p>
             <h3>Languages used:</h3>
             <p>Java</p>
-          </div>
-        </a>
-        <a
-          href="https://github.com/"
-          class="project-card-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div class="project">
-            <h1>File System Population Tool</h1>
-            <img class="logo" src="../imgs/directory.png" />
-            <p>
-              Production script that populates important business files
-              throughout a complex file system
-            </p>
-            <p>October 2020</p>
-            <h3>Languages used:</h3>
-            <p>Powershell</p>
           </div>
         </a>
       </div>

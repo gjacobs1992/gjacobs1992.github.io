@@ -10,17 +10,19 @@
   </head>
   <body>
     <button
-        class="mobile-nav-toggle"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Menu</span>
-      </button>
+      class="mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Menu</span>
+    </button>
     <header data-visible="false">
       <nav>
-        <h1 class="name">JJ Jacobs</h1>
-        <ul class="primary-navigation"  id="primary-navigation">
-          <li><a href="index.html">Experience</a></li>
+        <a href="#">
+          <h1 class="name">JJ Jacobs</h1>
+        </a>
+        <ul class="primary-navigation" id="primary-navigation">
+          <li><a href="pages/experience.html">Experience</a></li>
           <li><a href="pages/education.html">Education</a></li>
           <li><a href="pages/projects.html">Projects</a></li>
         </ul>
@@ -28,115 +30,52 @@
     </header>
     <main>
       <div class="page-title-div">
-        <h1 class="page-title">Experience</h1>
+        <h1 class="page-title">JJ Jacobs</h1>
       </div>
-      <div class="card-container">
-        <div class="job-container">
-          <h1 class="job-title">DEVELOPER</h1>
-          <h2 class="company">Soon to be :)</h2>
-          <div class="location-time-container">
-            <h3 class="location">Anywhere</h3>
-            <h3 class="timeframe">ASAP</h3>
+      <div class="home-card-container">
+        <div id="home-card">
+          <img src="imgs/headshot.jpg" id="headshot" />
+          <div id="greeting">Hi! I'm JJ!</div>
+          <div id="bio-div">
+            <p id="bio">
+              Throughout my entire life, I've always been around and intrigued
+              by technology. As a child, I would help my dad edit television
+              shows and eventually even operate the camera. In grade school, I
+              was always top of the class in the computer science classes. In
+              college, I ran with that fascincation and graduated with a
+              Bachelor's of Science in Information Systems from Slippery Rock
+              University. After college, I worked in IT Operations and a Systems Administrator. 7 years out of college, wanting to further my
+              knowledge, I enrolled in a Software Development bootcamp at Tech
+              Elevator. And today, I'm looking to begin my Software Development career!
+            </p>
           </div>
-        </div>
-        <div class="job-container">
-          <h1 class="job-title">Full Stack Bootcamp Student</h1>
-          <h2 class="company">Tech Elevator</h2>
-          <img class="logo" src="imgs/techelevator.png" />
-          <div class="location-time-container">
-            <h3 class="location">Columbus, OH/Remote</h3>
-            <h3 class="timeframe">August 2022 - Present</h3>
+          <div id="home-lists">
+            <div id="prof-lang">
+              <p class="list-title">Proficient Languages:</p>
+              <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div id="hobbies">
+              <p class="list-title">Hobbies Include:</p>
+              <ul>
+                <li>Music Production</li>
+                <li>Guitar</li>
+                <li>Cooking</li>
+                <li>Playing with my dogs</li>
+              </ul>
+            </div>
+            <div id="dogs">
+                <p class="list-title">Dogs names:</p>
+                <ul>
+                  <li>Daisy - 6 </li>
+                  <li>Cora - 1.5</li>
+                </ul>
+              </div>
           </div>
-          <p class="job-overview">
-            30-week full-stack coding bootcamp on how to create dynamic
-            web-based software systems providing 700+ hours of development
-            education and application
-          </p>
-          <ul class="resume-bullets" id="teList">
-            <li>Module 1: Intro to Programming in Java</li>
-            <li>Module 2: Client-Server Programming in Java</li>
-            <li>Module 3: Web Application Development</li>
-          </ul>
-        </div>
-        <div class="job-container">
-          <h1 class="job-title">Systems Administrator</h1>
-          <h2 class="company">OpenExhange</h2>
-          <img class="logo" src="imgs/oe.png" />
-          <div class="location-time-container">
-            <h3 class="location">Columbus, OH</h3>
-            <h3 class="timeframe">October 2021 - Present</h3>
-          </div>
-          <p class="job-overview">
-            Managed company internal technology infrastructure including server
-            stack, employee devices, and internal systems
-          </p>
-          <ul class="resume-bullets">
-            <li>
-              Implemented SSO for entire AWS infrastructure with current Office
-              365 tenant for ease of use and compliance standards
-            </li>
-            <li>
-              Championed a security overhaul by implementing new security tools
-              and processes for all endpoints and users
-            </li>
-            <li>
-              Configured and rolled out service desk portal for an IT Services
-              one-stop-shop
-            </li>
-          </ul>
-        </div>
-        <div class="job-container">
-          <h1 class="job-title">Systems Administrator</h1>
-          <h2 class="company">IRG Realty Advisors</h2>
-          <img class="logo" src="imgs/irgra.png" />
-          <div class="location-time-container">
-            <h3 class="location">Richfield, OH</h3>
-            <h3 class="timeframe">June 2017 - October 2021</h3>
-          </div>
-          <p class="job-overview">
-            Managed company internal technology infrastructure including server
-            stack, employee devices, and internal systems
-          </p>
-          <ul class="resume-bullets">
-            <li>
-              Analyzed, researched, tested, implemented, and negotiated
-              contracts for new software to simplify and automate company
-              procedures
-            </li>
-            <li>
-              Developed and configured new email security training program for
-              all employees, thereby successfully reducing simulated phish rate
-              from >40% to <10%
-            </li>
-            <li>
-              Promoted in April of 2018 from Technical Support Specialist to
-              Systems Administrator
-            </li>
-          </ul>
-        </div>
-        <div class="job-container">
-          <h1 class="job-title">Information Technology Assistant</h1>
-          <h2 class="company">Neshannock Township School District</h2>
-          <img class="logo" src="imgs/ntsd.png" />
-          <div class="location-time-container">
-            <h3 class="location">New Castle, PA</h3>
-            <h3 class="timeframe">August 2016 - June 2017</h3>
-          </div>
-          <p class="job-overview">
-            Managed the internal IT Help Desk to provide top-notch support to
-            all district employees
-          </p>
-          <ul class="resume-bullets">
-            <li>
-              Troubleshot and resolved hardware and software issues for a staff
-              of 100+, in addition to 1200+ students, and 400+ endpoints
-            </li>
-            <li>
-              Served as the primary point of contact for the technology
-              department to the school staff
-            </li>
-            <li>Maintained school website through Wordpress</li>
-          </ul>
         </div>
       </div>
     </main>
