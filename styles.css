@@ -164,6 +164,13 @@ main {
 #home-page-title{
   display: none;
 }
+#play-btn{
+  width: 20%;
+  height: 3em;
+  z-index: 1000;
+  box-shadow: 0 0 3px grey;
+  font-weight: 700;
+}
 @media only screen and (max-width: 800px) {
   .job-container,
   .project {
