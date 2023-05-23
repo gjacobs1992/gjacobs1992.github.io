@@ -171,6 +171,9 @@ main {
   box-shadow: 0 0 3px grey;
   font-weight: 700;
 }
+#btn-resume {
+  height: 2rem;
+}
 @media only screen and (max-width: 800px) {
   .job-container,
   .project {
